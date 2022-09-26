@@ -54,7 +54,7 @@ run_brownie_test () {
             brownie run scripts/client.py noninteractive --network ${NETWORK_ID}_BASE
         fi
     else
-        brownie run scripts/client.py --network ${NETWORK_ID}_BASE
+        brownie run scripts/globals.py --network ${NETWORK_ID}_BASE
     fi
 }
 
