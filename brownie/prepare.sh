@@ -1,5 +1,5 @@
 #!/bin/bash
-set -x
+# set -x
 
 USER=$(whoami)
 ENV_FILE_NAME="environment.json"
@@ -54,7 +54,7 @@ run_brownie_test () {
             brownie run scripts/globals.py main --network ${NETWORK_ID}_BASE
         fi
     else
-        brownie run scripts/globals.py --network ${NETWORK_ID}_BASE
+        brownie run scripts/globals.py main --network ${NETWORK_ID}_BASE
     fi
 }
 
